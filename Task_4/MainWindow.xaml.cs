@@ -33,7 +33,13 @@ namespace Task_4
 
         private void CalculationButton_Click(object sender, RoutedEventArgs e)
         {
+            //не знаю наскильки це коректно для патенра MVP.
+            //можливо порібнобулоб створити 4 євента дял кожної опреації
+            //і тут зробити перевірку і інфокати саме конкретній івент
+
             calculator.Operation();
+
+
             CalculatEvent.Invoke(calculator.Operand1, calculator.Operand2);
         }
     }

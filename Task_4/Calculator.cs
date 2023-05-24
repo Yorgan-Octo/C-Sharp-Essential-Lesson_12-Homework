@@ -84,7 +84,7 @@ namespace Task_4
         {
             string resalt;
 
-            if (operand1 == 0 && operand2 == 0)
+            if (operand1 == 0 || operand2 == 0)
                 resalt = "На нуль дідити не можна";
             else
                 resalt = $"{mathematicalOperations.Div(operand1, operand2)}";
